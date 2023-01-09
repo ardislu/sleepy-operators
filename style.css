@@ -1,0 +1,88 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  background: radial-gradient(circle at min(300px, 50% - 8px) 50%, hsl(222deg 50% 20%) 300px, hsl(240deg 50% 5%));
+  color: hsl(222deg 50% 80%);
+  block-size: 100dvh;
+  inline-size: min(720px, 100% - 16px);
+  margin-block: 0;
+  margin-inline: 8px auto;
+  display: grid;
+  place-items: center;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+span {
+  font-weight: 700;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tr {
+  transition: background-color 400ms;
+}
+
+tr:hover,
+tr:focus-within {
+  background: hsl(222deg 50% 15%);
+  transition: background-color 200ms;
+}
+
+th,
+td {
+  line-height: 2;
+  padding-block: 8px;
+  padding-inline: 4px 16px;
+}
+
+/* Optically center the shortcut cell vertically (due to <kbd> styling) */
+td:has(kbd) {
+  transform: translateY(-2px);
+}
+
+kbd {
+  background: linear-gradient(180deg, hsl(0deg 0% 20%), hsl(0deg 0% 10%));
+  font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+  font-weight: bold;
+  font-size: 0.75em;
+  padding-block: 3px;
+  padding-inline: 6px;
+  border: 1px solid;
+  border-radius: 8px;
+  margin-inline: 4px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 700;
+  color: inherit;
+}
+
+a>svg {
+  inline-size: 24px;
+  block-size: 24px;
+  padding: 12px;
+  padding-block-end: 0;
+  border-radius: 16px;
+  transition: transform 600ms, filter 800ms;
+}
+
+a>svg:hover,
+a>svg:focus-within {
+  filter: brightness(130%);
+  transform: translateY(-4px);
+  transition: transform 200ms, filter 300ms;
+}
+
+abbr:has(kbd) {
+  text-decoration: none;
+}
