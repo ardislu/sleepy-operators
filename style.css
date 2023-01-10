@@ -28,7 +28,18 @@ p {
 }
 
 table {
+  display: none;
   border-collapse: collapse;
+}
+
+@media (min-width: 475px) {
+  .mobile-instructions {
+    display: none;
+  }
+
+  table {
+    display: revert;
+  }
 }
 
 caption {
