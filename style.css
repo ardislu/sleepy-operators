@@ -23,6 +23,11 @@ table {
   border-collapse: collapse;
 }
 
+caption {
+  caption-side: bottom;
+  font-size: 0.9rem;
+}
+
 tr {
   transition: background-color 400ms;
 }
