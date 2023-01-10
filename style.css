@@ -106,3 +106,18 @@ a>svg:focus-within {
 abbr:has(kbd) {
   text-decoration: none;
 }
+
+.yawn {
+  position: fixed;
+  bottom: 8px;
+  right: 8px;
+  cursor: pointer;
+  opacity: 10%;
+  transition: opacity 600ms;
+}
+
+.yawn:hover,
+.yawn:focus-within {
+  opacity: 65%;
+  transition: opacity 200ms;
+}
