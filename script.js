@@ -1,5 +1,7 @@
 import * as sleepy from '/sleepy-operators.js';
 
+globalThis.sleepy = sleepy;
+
 const ascii =
 `    _
     | |
@@ -16,11 +18,17 @@ const ascii =
       | |
       |_|`;
 
-function help() {
+globalThis.help = function help() {
   console.log(`%c ${ascii}`, 'font-weight: bold');
-  // TODO: print a helpful demo message
+  console.log('🥱 Hello! Type functions() to display all the sleepy-operators.');
 }
-globalThis.help = help;
 help();
 
-globalThis.sleepy = sleepy;
+globalThis.functions = function functions() {
+  console.table({
+    'help()': 'Print the introduction message.',
+    'functions()': 'Print all the sleepy-operators.',
+    'sleepy.sort(number[])': 'Sleepily sort an array of numbers.',
+    'sleepy.sum(number[])': 'Sleepily sum together an array of numbers.'
+  });
+}
