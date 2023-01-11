@@ -12,6 +12,7 @@ header {
   align-self: end;
   display: flex;
   align-items: center;
+  margin-block-start: 8px;
 }
 
 h1 {
@@ -20,6 +21,7 @@ h1 {
 
 main {
   align-self: start;
+  margin-block-end: 8px;
 }
 
 p {
