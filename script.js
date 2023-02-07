@@ -32,3 +32,7 @@ globalThis.functions = function functions() {
     'sleepy.sum(number[])': 'Sleepily sum together an array of numbers.'
   });
 }
+
+document.querySelector('div.yawn').addEventListener('click', e => {
+  console.log('👏 You found an easter egg!');
+});
