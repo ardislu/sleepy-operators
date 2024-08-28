@@ -21,7 +21,7 @@ const ascii =
 globalThis.help = function help() {
   const asciiReplaced = [...ascii].map(c => c === ' ' && Math.random() < 0.1 ? 'z' : c).join('');
   console.log(`%c ${asciiReplaced}`, 'font-weight: bold');
-  console.log('🥱 Hello! Type functions() to display all the sleepy-operators.');
+  console.log('🥱 Hello! Type %cfunctions()%c to display all the sleepy-operators.', 'background-color: #eee; padding: 2px', '');
 }
 help();
 
