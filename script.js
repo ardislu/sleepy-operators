@@ -3,23 +3,24 @@ import * as sleepy from '/sleepy-operators.js';
 globalThis.sleepy = sleepy;
 
 const ascii =
-`    _
-    | |
- ___| | ___  ___  _____  _   _
-| __| || _ || _ ||  _  || | | |_____
-|_  | || __|| __|| |_| || |_| |_____|
-|___|_||___||___||  ___||___  |
-                 | |      __| |
-                 |_|     |____|
+`    _                                            
+    | |                                           
+ ___| | ___  ___  _____  _   _                    
+| __| || _ || _ ||  _  || | | |_____              
+|_  | || __|| __|| |_| || |_| |_____|             
+|___|_||___||___||  ___||___  |                   
+                 | |      __| |                   
+                 |_|     |____|                   
  _____ _____ ___  ___  ____ | |_  _____  ____ ___
 |  _  |  _  | _ ||  _|/ _  ||  _||  _  ||  __/ __|
 | |_| | |_| | __|| | | |_| || |__| |_| || |  |__ |
 |_____|  ___|___||_| |_____||____|_____||_|  |___|
-      | |
-      |_|`;
+      | |                                         
+      |_|                                         `;
 
 globalThis.help = function help() {
-  console.log(`%c ${ascii}`, 'font-weight: bold');
+  const asciiReplaced = [...ascii].map(c => c === ' ' && Math.random() < 0.1 ? 'z' : c).join('');
+  console.log(`%c ${asciiReplaced}`, 'font-weight: bold');
   console.log('🥱 Hello! Type functions() to display all the sleepy-operators.');
 }
 help();
