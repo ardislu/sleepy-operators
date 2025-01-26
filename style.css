@@ -1,5 +1,5 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  font-family: system-ui, sans-serif;
   background: radial-gradient(circle at 6dvw 50%, hsl(222deg 50% 20%) 300px, hsl(240deg 50% 5%));
   color: hsl(222deg 50% 80%);
   min-block-size: 100dvh;
@@ -72,7 +72,7 @@ td:has(kbd) {
 
 kbd {
   background: linear-gradient(180deg, hsl(0deg 0% 20%), hsl(0deg 0% 10%));
-  font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+  font-family: ui-monospace, monospace;
   font-weight: bold;
   font-size: 0.75em;
   padding-block: 3px;
