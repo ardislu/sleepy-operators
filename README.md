@@ -4,6 +4,8 @@ An assortment of sleep-based operators to make your programs sleepier.
 
 Or: `sleepsort` but for everything.
 
+Code repository mirrors: [GitHub](https://github.com/ardislu/sleepy-operators), [Codeberg](https://codeberg.org/ardislu/sleepy-operators), [git.ardis.lu](https://git.ardis.lu/sleepy-operators)
+
 Import the module:
 
 ```javascript
